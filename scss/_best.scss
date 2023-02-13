@@ -1,0 +1,67 @@
+
+
+.best{
+      background-color: #EFF4F8;
+      margin-top: 50px;
+}
+
+@media only screen and (min-width: 1024px) {
+      .best{
+            padding: 40px;
+
+      }
+}
+
+.best-inner{
+      display: flex;
+      flex-direction: column;
+}
+
+@media only screen and (min-width: 1024px) {
+      .best-inner{
+            position: relative;
+      }
+}
+
+.best-inner-img{
+      img{
+            max-width: 100%;
+            height: auto;
+      }
+}
+
+
+.best-inner-text{
+      background-color: #fff;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      h3{
+            color: #686868;
+            font-size: 32px;
+            text-transform: capitalize;
+            font-family: 'Gilda Display';
+            margin-bottom: 20px;
+            font-weight: 100;
+      }
+      p{
+            font-size: 14px;
+            line-height: 30px;
+            color: #a0a0a0;
+      }
+}
+
+@media only screen and (min-width: 1024px) {
+      .best-inner-text{
+            position: absolute;
+            max-width: 45%;
+            top: 25%;
+            right: 25px;
+            h3{
+                  font-size: 45px;
+            }
+            p{
+                  font-size: 18px;
+            }
+      }
+}

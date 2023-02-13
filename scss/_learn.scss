@@ -1,0 +1,84 @@
+#search {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .learn{
+    padding: 20px 0;
+  }
+}
+
+.learn-text {
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-items: center;
+      span{
+            font-size: 25px;
+            color: #c5a27f;
+            font-family: 'Bodoni';
+            text-transform: uppercase;
+      }
+}
+
+@media only screen and (min-width: 1024px) {
+  .learn-text{
+    margin-top: -10px;
+    span{
+      font-size: 28px;
+    }
+  }
+}
+
+.learn-search-lab {
+  position: absolute;
+  right: 15px;
+  top: 25px;
+  img{
+      width: 20px;
+      height: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .learn-search-lab{
+    right: 30px;
+    img{
+      width: auto;
+      height: auto;
+
+    }
+  }
+}
+
+.learn-search-block {
+  position: absolute;
+  right: -100%;
+  top: 20px;
+  transition: 0.5s;
+  z-index: 3;
+  display: none;
+}
+
+#search:checked ~ .learn-search-block {
+  right: 45%;
+  transform: translateX(50%);
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  #search:checked ~ .learn-search-block{
+    right: 18%;
+    transform: translateX(50%);
+  }
+}
+
+
+#text{
+      padding: 8px 15px;
+      border-radius: 12px;
+      border: 1px solid #999999;
+      outline: none;
+}
+

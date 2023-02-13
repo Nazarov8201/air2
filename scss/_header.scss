@@ -1,0 +1,116 @@
+#check{
+      display: none;
+}
+
+
+#check:checked~.header-menu{
+      width: 100%;
+
+      .header-menu-link{
+            display: block;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            padding-bottom: 20px;
+            align-items: center;
+      }
+      
+      .header-menu-block{
+            font-size: 22px;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+      }
+
+}
+
+@media only screen and (min-width: 1024px) {
+      #check:checked~.header-menu{
+            width: 30%;
+            transition: 0.5s;
+      }
+      .header-menu-link{
+            overflow: visible;
+      }
+      
+      .header-menu-block{
+            font-size: 22px;
+      }
+
+}
+
+.header-menu-lab{
+      position: absolute;
+      top: 25px;
+      left: 13px;
+      z-index: 3;
+      img{
+            max-width: 70%;
+      }
+}
+
+@media only screen and (min-width: 1024px) {
+      .header-menu-lab{
+            left: 45px;
+            img{
+                  max-width: 100%;
+            }
+      }
+}
+
+.header-menu{
+      position: absolute;
+      transition: 0.5s;
+      width: 50px;
+      height: 410px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: #fff;
+}
+
+@media only screen and (min-width: 1024px) {
+      .header-menu{
+            height: 740px;
+            width: 115px;
+      }
+}
+
+.header-menu-link{
+     display: none;
+
+      
+}
+
+.header-menu-link{
+      list-style: none;
+      overflow: hidden;
+      a{
+            text-decoration: none;
+            color: #999999;
+            text-transform: capitalize;
+            font-size: 16px;
+            overflow: hidden;
+      }
+}
+
+.header-menu-block{
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      flex-direction: column;
+      a{
+            color: #999999;
+            text-decoration: none;
+            font-size: 16px;
+      }
+}
+
+@media only screen and (min-width: 1024px) {
+      .header-menu-block{
+            a{
+                  font-size: 22px;
+            }
+      }
+}

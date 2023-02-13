@@ -1,0 +1,25 @@
+*{
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      box-sizing: border-box;
+}
+
+.container{
+      max-width: 95%;
+      margin: 0 auto;
+}
+
+@media only screen and (min-width: 1024px) {
+      .container{
+            max-width: 1170px;
+      }
+}
+
+
+@import "header";
+@import "learn";
+@import "header-inner";
+@import "our";
+@import "best";
+@import "servis";
