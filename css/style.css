@@ -455,16 +455,130 @@
 }
 .servis-inner-learn p {
   text-transform: capitalize;
-  font-size: 45px;
+  font-size: 32px;
   color: #686868;
   text-align: center;
   font-family: "Gilda Display", sans-serif;
 }
 
+@media only screen and (min-width: 1024px) {
+  .servis-inner-learn p {
+    font-size: 45px;
+  }
+}
 .servis-inner-block {
   display: flex;
   gap: 20px;
   justify-content: center;
   align-items: center;
   text-align: justify;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 1024px) {
+  .servis-inner-block {
+    flex-direction: row;
+  }
+}
+.servis-inner-block-restaran {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.servis-inner-block-restaran-img {
+  margin-bottom: 10px;
+}
+
+.servis-inner-block-restaran-text {
+  line-height: 2;
+  text-align: center;
+}
+.servis-inner-block-restaran-text span {
+  font-size: 25px;
+  color: #686868;
+  font-family: "Gilda Display", sans-serif;
+  text-transform: capitalize;
+}
+.servis-inner-block-restaran-text p {
+  font-size: 14px;
+  color: #a0a0a0;
+  text-align: center;
+}
+
+.find-inner {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 1024px) {
+  .find-inner {
+    flex-direction: row;
+  }
+}
+.find-inner-img {
+  background: url(/images/find.png);
+  height: 400px;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .find-inner-img {
+    height: 600px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .find-inner-img {
+    display: flex;
+    flex-basis: 60%;
+    height: 700px;
+  }
+}
+.find-inner-text {
+  background-color: #0e6fb3;
+  padding: 20px;
+}
+.find-inner-text h3 {
+  font-size: 28px;
+  color: #fff;
+  text-transform: capitalize;
+  font-family: "Gilda Display", sans-serif;
+}
+.find-inner-text p {
+  font-size: 14px;
+  color: #fff;
+  line-height: 2;
+}
+.find-inner-text a {
+  text-decoration: none;
+  color: #999999;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-family: "Gilda Display", sans-serif;
+  display: flex;
+  padding: 15px 25px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .find-inner-text {
+    flex-basis: 40%;
+    padding: 10px 40px;
+  }
+  .find-inner-text h3 {
+    font-size: 45px;
+  }
+  .find-inner-text p {
+    font-size: 18px;
+  }
+  .find-inner-text a {
+    font-size: 25px;
+    padding: 15px 30px;
+  }
+}
+.find-inner-text-link {
+  background-color: #fff;
+  display: inline-block;
+  margin-top: 10px;
 }/*# sourceMappingURL=style.css.map */

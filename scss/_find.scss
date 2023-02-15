@@ -1,0 +1,82 @@
+
+
+.find-inner{
+      display: flex;
+      margin-top: 20px;
+      flex-direction: column;
+}
+
+@media only screen and (min-width: 1024px) {
+      .find-inner{
+            flex-direction: row;
+      }
+}
+
+.find-inner-img{
+      background: url(/images/find.png);
+      height: 400px;
+      
+      background-size: cover;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .find-inner-img{
+            height: 600px;
+      }
+}
+
+@media only screen and (min-width: 1024px) {
+      .find-inner-img{
+            display: flex;
+            flex-basis: 60%;
+            height: 700px;
+      }
+}
+
+.find-inner-text{
+      background-color: #0e6fb3;
+      padding: 20px;
+      h3{
+            font-size: 28px;
+            color: #fff;
+            text-transform: capitalize;
+            font-family: 'Gilda Display', sans-serif;
+      }
+      p{
+            font-size: 14px;
+            color: #fff;
+            line-height: 2;
+      }
+      a{
+            text-decoration: none;
+            color: #999999;
+            font-size: 16px;
+            text-transform: capitalize;
+            font-family: 'Gilda Display', sans-serif;
+            display: flex;
+            padding: 15px 25px;
+      }
+}
+
+@media only screen and (min-width: 1024px) {
+      .find-inner-text{
+            flex-basis: 40%;
+            padding: 10px 40px;
+            h3{
+                  font-size: 45px;
+            }
+            p{
+                  font-size: 18px;
+            }
+            a{
+                  font-size: 25px;
+                  padding: 15px 30px;
+            }
+      }
+}
+
+.find-inner-text-link{
+      background-color: #fff;
+      display: inline-block;
+      margin-top: 10px;
+}
