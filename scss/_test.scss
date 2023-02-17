@@ -1,0 +1,104 @@
+
+
+.test-inner{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+
+.test-inner-learn{
+      padding: 30px 0;
+      h3{
+            font-size: 32px;
+            color: #686868;
+            text-transform: capitalize;
+            font-family: 'Gilda Display', sans-serif;
+            font-weight: 100;
+      }
+}
+
+@media only screen and (min-width: 1024px) {
+      .test-inner-learn{
+            h3{
+                  font-size: 45px;
+            }
+      }
+}
+
+.test-inner-block{
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+}
+
+.test-inner-block-el{
+      position: relative;
+      width: 357px;
+      height: 259px;
+      overflow: hidden;
+      img{
+            width: 370px;
+            height: 269px;
+      }
+}
+
+.test-inner-block-el-link{
+      bottom: -100%;
+      position: absolute;
+      background-color: #fff;
+      transition: 0.5s;
+      height: 100%;
+      padding: 20px;
+      span{
+            font-size: 25px;
+            color: #686868;
+            font-family: 'Gilda Display', sans-serif;
+            text-transform: capitalize;
+      }
+      p{
+            font-size: 14px;
+            color: #a0a0a0;
+            line-height: 25px;
+            margin: 5px 0;
+            text-transform: capitalize;
+      }
+      p:nth-child(3){
+            text-transform: none;
+      }
+      a{
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 16px;
+            color: #fff;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0e6fb3;
+            margin-top: 10px;
+      }
+}
+
+.test-inner-block-el:hover{
+      .test-inner-block-el-link{
+            bottom: 0;
+      }
+}
+
+
+.test-inner-block-el-text{
+      position: absolute;
+      width: 100%;
+      bottom: 10%;
+      left: 10%;
+      line-height: 1.5;
+      color: #fff;
+      span{
+            font-family: 'Gilda Display', sans-serif;
+            font-size: 22px;
+      }
+      p{
+            font-size: 14px;
+      }
+}
